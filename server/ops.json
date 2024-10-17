@@ -1,0 +1,32 @@
+[
+  {
+    "uuid": "31c96050-3ca4-30b0-b3c3-2c6a78e41297",
+    "name": "Wlsk",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "a9089e09-1c76-3a2d-bf62-0dd968e1422e",
+    "name": "Wlsk_",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "e3e34079-37bd-3b3d-b88e-5923a1c6f21b",
+    "name": "Wlsik",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "96aff33a-b2c9-3862-ad43-6ae73c6476a6",
+    "name": "wlsk_",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "c90806aa-6c62-38f1-b44c-a7f6bf4c78af",
+    "name": "Wisk",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

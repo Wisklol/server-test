@@ -1,0 +1,873 @@
+[12:30:03] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[12:30:03] [Server thread/INFO]: Loading properties
+[12:30:03] [Server thread/INFO]: Default game type: SURVIVAL
+[12:30:03] [Server thread/INFO]: This server is running CraftBukkit version git-PaperSpigot-445 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[12:30:03] [Server thread/INFO]: Debug logging is disabled
+[12:30:03] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[12:30:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+
+[12:30:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:30:03] [Server thread/INFO]: Data value allowed items: 
+[12:30:03] [Server thread/WARN]: java.lang.NoSuchFieldException: modifiers
+
+[12:30:03] [Server thread/WARN]: 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+
+[12:30:03] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.stackableBuckets(PaperSpigotConfig.java:192)
+
+[12:30:03] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+
+[12:30:03] [Server thread/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+[12:30:03] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.readConfig(PaperSpigotConfig.java:84)
+
+[12:30:03] [Server thread/WARN]: 	at org.github.paperspigot.PaperSpigotConfig.init(PaperSpigotConfig.java:62)
+
+[12:30:04] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:181)
+
+[12:30:04] [Server thread/WARN]: 	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563)
+
+[12:30:04] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[12:30:04] [Server thread/INFO]: Generating keypair
+[12:30:04] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[12:30:04] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[12:30:04] [Server thread/INFO]: Using default channel type
+[12:30:04] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[12:30:04] [Server thread/ERROR]: Could not load 'plugins/EaglerXBungee-1.3.1.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:331) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:254) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:293) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:202) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:714) ~[?:?]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:65) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: net.md_5.bungee.api.plugin.Plugin
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:524) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:427) ~[?:?]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:421) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:714) ~[?:?]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:420) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:102) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:87) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:65) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[patched_1.8.8.jar:git-PaperSpigot-445]
+	... 6 more
+[12:30:04] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v6.4
+[12:30:04] [Server thread/INFO]: [SimpleHomes] Loading SimpleHomes v2.2
+[12:30:04] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1;no_git_id
+[12:30:04] [Server thread/INFO]: [LoginSecurity] Loading LoginSecurity v3.2.0
+[12:30:04] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:30:04] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:30:04] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[12:30:04] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[12:30:04] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:30:04] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[12:30:04] [Server thread/INFO]: Preparing level "world"
+[12:30:04] [Server thread/INFO]: -------- World Settings For [world] --------
+[12:30:04] [Server thread/INFO]: Mob Spawn Range: 4
+[12:30:04] [Server thread/INFO]: Anti X-Ray: true
+[12:30:04] [Server thread/INFO]: 	Engine Mode: 1
+[12:30:04] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[12:30:04] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[12:30:04] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[12:30:04] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: Cane Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: Melon Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[12:30:04] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[12:30:04] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[12:30:04] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[12:30:04] [Server thread/INFO]: Random Lighting Updates: false
+[12:30:04] [Server thread/INFO]: Structure Info Saving: true
+[12:30:04] [Server thread/INFO]: Sending up to 10 chunks per packet
+[12:30:04] [Server thread/INFO]: Max Entity Collisions: 8
+[12:30:04] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[12:30:04] [Server thread/INFO]: Max TNT Explosions: 100
+[12:30:04] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[12:30:04] [Server thread/INFO]: Item Despawn Rate: 6000
+[12:30:04] [Server thread/INFO]: Item Merge Radius: 2.5
+[12:30:04] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[12:30:04] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[12:30:04] [Server thread/INFO]: Clear tick list: false
+[12:30:04] [Server thread/INFO]: Experience Merge Radius: 3.0
+[12:30:04] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[12:30:04] [Server thread/INFO]: View Distance: 4
+[12:30:04] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[12:30:04] [Server thread/INFO]: -------- World Settings For [world] --------
+[12:30:04] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[12:30:04] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[12:30:04] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[12:30:04] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[12:30:04] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[12:30:04] [Server thread/INFO]: Water over lava flow speed: 5
+[12:30:04] [Server thread/INFO]: Fix TNT cannons: false
+[12:30:04] [Server thread/INFO]: Keep spawn chunk loaded: true
+[12:30:04] [Server thread/INFO]: World async lighting: false
+[12:30:04] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[12:30:04] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[12:30:04] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[12:30:05] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[12:30:05] [Server thread/INFO]: Mob Spawn Range: 4
+[12:30:05] [Server thread/INFO]: Anti X-Ray: true
+[12:30:05] [Server thread/INFO]: 	Engine Mode: 1
+[12:30:05] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[12:30:05] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[12:30:05] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[12:30:05] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Cane Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Melon Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[12:30:05] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[12:30:05] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[12:30:05] [Server thread/INFO]: Random Lighting Updates: false
+[12:30:05] [Server thread/INFO]: Structure Info Saving: true
+[12:30:05] [Server thread/INFO]: Sending up to 10 chunks per packet
+[12:30:05] [Server thread/INFO]: Max Entity Collisions: 8
+[12:30:05] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[12:30:05] [Server thread/INFO]: Max TNT Explosions: 100
+[12:30:05] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[12:30:05] [Server thread/INFO]: Item Despawn Rate: 6000
+[12:30:05] [Server thread/INFO]: Item Merge Radius: 2.5
+[12:30:05] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[12:30:05] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[12:30:05] [Server thread/INFO]: Clear tick list: false
+[12:30:05] [Server thread/INFO]: Experience Merge Radius: 3.0
+[12:30:05] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[12:30:05] [Server thread/INFO]: View Distance: 4
+[12:30:05] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[12:30:05] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[12:30:05] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[12:30:05] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[12:30:05] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[12:30:05] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[12:30:05] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[12:30:05] [Server thread/INFO]: Water over lava flow speed: 5
+[12:30:05] [Server thread/INFO]: Fix TNT cannons: false
+[12:30:05] [Server thread/INFO]: Keep spawn chunk loaded: true
+[12:30:05] [Server thread/INFO]: World async lighting: false
+[12:30:05] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[12:30:05] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[12:30:05] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[12:30:05] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[12:30:05] [Server thread/INFO]: Mob Spawn Range: 4
+[12:30:05] [Server thread/INFO]: Anti X-Ray: true
+[12:30:05] [Server thread/INFO]: 	Engine Mode: 1
+[12:30:05] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[12:30:05] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[12:30:05] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[12:30:05] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Cane Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Melon Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[12:30:05] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[12:30:05] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[12:30:05] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[12:30:05] [Server thread/INFO]: Random Lighting Updates: false
+[12:30:05] [Server thread/INFO]: Structure Info Saving: true
+[12:30:05] [Server thread/INFO]: Sending up to 10 chunks per packet
+[12:30:05] [Server thread/INFO]: Max Entity Collisions: 8
+[12:30:05] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[12:30:05] [Server thread/INFO]: Max TNT Explosions: 100
+[12:30:05] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[12:30:05] [Server thread/INFO]: Item Despawn Rate: 6000
+[12:30:05] [Server thread/INFO]: Item Merge Radius: 2.5
+[12:30:05] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[12:30:05] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[12:30:05] [Server thread/INFO]: Clear tick list: false
+[12:30:05] [Server thread/INFO]: Experience Merge Radius: 3.0
+[12:30:05] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[12:30:05] [Server thread/INFO]: View Distance: 4
+[12:30:05] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[12:30:05] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[12:30:05] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[12:30:05] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[12:30:05] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[12:30:05] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[12:30:05] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 32 Hard: 128
+[12:30:05] [Server thread/INFO]: Water over lava flow speed: 5
+[12:30:05] [Server thread/INFO]: Fix TNT cannons: false
+[12:30:05] [Server thread/INFO]: Keep spawn chunk loaded: true
+[12:30:05] [Server thread/INFO]: World async lighting: false
+[12:30:05] [Server thread/INFO]: WorldServer TickNextTick cap set at 10000
+[12:30:05] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[12:30:05] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[12:30:05] [Server thread/INFO]: Preparing start region for level 0 (Seed: -7893832420577949001)
+[12:30:06] [Server thread/INFO]: Preparing spawn area: 24%
+[12:30:07] [Server thread/INFO]: Preparing spawn area: 82%
+[12:30:07] [Server thread/INFO]: Preparing start region for level 1 (Seed: -7893832420577949001)
+[12:30:08] [Server thread/INFO]: Preparing spawn area: 50%
+[12:30:09] [Server thread/INFO]: Preparing spawn area: 74%
+[12:30:09] [Server thread/INFO]: Preparing start region for level 2 (Seed: -7893832420577949001)
+[12:30:10] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.4
+[12:30:10] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+
+[12:30:10] [Server thread/INFO]: [0;33;1m[21m[SimpleTpa] Simple Tpa has been enabled on version 6.4[m
+
+[12:30:10] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[12:30:10] [Server thread/INFO]: [SimpleHomes] Enabling SimpleHomes v2.2
+[12:30:10] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1;no_git_id
+[12:30:10] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[12:30:10] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[12:30:10] [Server thread/INFO]: [LoginSecurity] Enabling LoginSecurity v3.2.0
+[12:30:10] [Server thread/INFO]: [LoginSecurity] Loading base translations from "en_us"
+[12:30:10] [Server thread/INFO]: [LoginSecurity] Loading specified translations from "en_us"
+[12:30:11] [Server thread/INFO]: [LoginSecurity] Registering commands...
+[12:30:11] [Server thread/INFO]: [LoginSecurity] Registering listeners...
+[12:30:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:30:11] [Server thread/INFO]: Done (6.498s)! For help, type "help" or "?"
+[12:30:11] [Server thread/INFO]: Timings Reset
+[12:30:14] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[21m[SimpleTpa] There is a new update available.[m
+
+[12:30:14] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[SimpleTpa] There is a new update available:[m
+
+[12:30:14] [Craft Scheduler Thread - 0/INFO]: [0;31;1m[SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/[m
+
+[12:31:30] [Thread-7/INFO]: UUID of player Wisk is c90806aa-6c62-38f1-b44c-a7f6bf4c78af
+[12:31:31] [Server thread/INFO]: Wisk[/[0:0:0:0:0:0:0:1]:39836] logged in with entity id 729 at ([world]316.3634659884582, 65.50291204840914, 263.6391186686774)
+[12:38:02] [Thread-9/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[12:38:02] [Server thread/WARN]: Failed to load player data for ZaZa
+[12:38:02] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:58164] logged in with entity id 827 at ([world]215.5, 75.0, 236.5)
+[12:38:32] [Server thread/INFO]: ZaZa lost connection: Login timed out!
+[12:38:32] [Server thread/INFO]: ZaZa left the game.
+[12:38:32] [Server thread/WARN]: handleDisconnection() called twice
+[12:38:57] [Thread-10/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[12:38:57] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:51690] logged in with entity id 1181 at ([world]215.30000001192093, 75.0, 236.99945999384107)
+[12:44:01] [Server thread/INFO]: ZaZa tried to swim in lava
+[12:44:50] [Async Chat Thread - #0/INFO]: <Wisk> yo[m
+
+[12:44:53] [Async Chat Thread - #0/INFO]: <ZaZa> yo[m
+
+[12:45:06] [Async Chat Thread - #0/INFO]: <Wisk> what happem[m
+
+[12:45:15] [Async Chat Thread - #0/INFO]: <ZaZa> wdym[m
+
+[12:45:28] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[12:45:28] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[12:45:33] [Async Chat Thread - #0/INFO]: <Wisk> help[m
+
+[12:45:40] [Server thread/INFO]: Wisk issued server command: /tp ZaZA
+[12:45:40] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[12:45:48] [Server thread/INFO]: ZaZa tried to swim in lava
+[12:45:54] [Async Chat Thread - #0/INFO]: <ZaZa> nigga[m
+
+[12:45:56] [Async Chat Thread - #0/INFO]: <Wisk> oops[m
+
+[12:46:04] [Async Chat Thread - #0/INFO]: <Wisk> i didnt knoe[m
+
+[12:48:25] [Server thread/INFO]: ZaZa lost connection: Disconnected
+[12:48:25] [Server thread/INFO]: ZaZa left the game.
+[12:51:34] [Thread-11/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[12:51:34] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:39828] logged in with entity id 6710 at ([world]349.66828246512785, 71.0, 285.012505613326)
+[12:52:51] [Async Chat Thread - #1/INFO]: <Wisk> wsp[m
+
+[12:52:55] [Async Chat Thread - #1/INFO]: <ZaZa> yo[m
+
+[12:52:59] [Async Chat Thread - #1/INFO]: <Wisk> bro ur acc is back[m
+
+[12:53:02] [Async Chat Thread - #1/INFO]: <Wisk> how[m
+
+[12:53:07] [Async Chat Thread - #1/INFO]: <ZaZa> idk[m
+
+[12:53:17] [Async Chat Thread - #1/INFO]: <Wisk> why is there so many chickens[m
+
+[12:53:32] [Async Chat Thread - #1/INFO]: <ZaZa> idk chicken farm time[m
+
+[12:53:38] [Async Chat Thread - #1/INFO]: <Wisk> bro is the chicken whisperer[m
+
+[12:54:17] [Async Chat Thread - #1/INFO]: <ZaZa> nigga what are you doing[m
+
+[12:54:18] [Async Chat Thread - #1/INFO]: <Wisk> cow[m
+
+[12:54:24] [Async Chat Thread - #1/INFO]: <Wisk> im gonna milk u[m
+
+[12:54:40] [Async Chat Thread - #1/INFO]: <Wisk> moo[m
+
+[12:54:49] [Async Chat Thread - #1/INFO]: <ZaZa> gather chickens[m
+
+[12:54:52] [Async Chat Thread - #1/INFO]: <Wisk> oops im not a cow[m
+
+[12:55:38] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[12:55:38] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[12:59:03] [Async Chat Thread - #2/INFO]: <Wisk> wtf[m
+
+[12:59:09] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[12:59:09] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[12:59:21] [Async Chat Thread - #2/INFO]: <ZaZa> afk i need to do work[m
+
+[12:59:30] [Async Chat Thread - #2/INFO]: <Wisk> kk[m
+
+[12:59:52] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[12:59:52] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[13:03:16] [Server thread/INFO]: ZaZa was slain by Wisk
+[13:03:56] [Server thread/INFO]: Wisk issued server command: /tp ZaZa Wisk
+[13:04:47] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:04:47] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:04:53] [Server thread/INFO]: Wisk issued server command: /gamemode spectator
+[13:04:53] [Server thread/INFO]: [Wisk: Set own game mode to Spectator Mode]
+[13:04:57] [Async Chat Thread - #3/INFO]: <Wisk> shi mb[m
+
+[13:05:10] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:05:10] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:05:13] [Server thread/INFO]: Wisk tried to swim in lava
+[13:05:21] [Server thread/INFO]: Wisk issued server command: /gamemode spectator
+[13:05:21] [Server thread/INFO]: [Wisk: Set own game mode to Spectator Mode]
+[13:06:26] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[13:06:26] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[13:07:13] [Server thread/INFO]: ZaZa issued server command: /back
+[13:07:38] [Async Chat Thread - #4/INFO]: <ZaZa> yo bastard[m
+
+[13:07:43] [Async Chat Thread - #4/INFO]: <Wisk> I SAID MB[m
+
+[13:08:10] [Async Chat Thread - #4/INFO]: <Wisk> i bet u cant find me[m
+
+[13:08:16] [Async Chat Thread - #4/INFO]: <ZaZa> alr bet[m
+
+[13:08:25] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:08:25] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:08:36] [Async Chat Thread - #4/INFO]: <Wisk> if u punch me u win[m
+
+[13:08:54] [Async Chat Thread - #4/INFO]: <Wisk> hint:im at base[m
+
+[13:09:23] [Async Chat Thread - #4/INFO]: <Wisk> bro going mining[m
+
+[13:09:26] [Server thread/INFO]: Wisk tried to swim in lava
+[13:09:36] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:09:36] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:09:44] [Server thread/INFO]: Wisk issued server command: /gamemode spectator
+[13:09:44] [Server thread/INFO]: [Wisk: Set own game mode to Spectator Mode]
+[13:10:04] [Async Chat Thread - #4/INFO]: <ZaZa> brb[m
+
+[13:10:17] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:10:17] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:10:46] [Async Chat Thread - #4/INFO]: <Wisk> ok but u cant find me lololol[m
+
+[13:10:49] [Async Chat Thread - #4/INFO]: <Wisk> ok but u cant find me lololol[m
+
+[13:11:15] [Async Chat Thread - #4/INFO]: <Wisk> all u have to do is punch me to win[m
+
+[13:11:33] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[13:11:33] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[13:11:46] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:11:46] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:11:57] [Server thread/INFO]: Wisk issued server command: /gamemode spectator
+[13:11:57] [Server thread/INFO]: [Wisk: Set own game mode to Spectator Mode]
+[13:12:01] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[13:12:01] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[13:12:25] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:12:25] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:13:37] [Async Chat Thread - #5/INFO]: <ZaZa> hint?[m
+
+[13:14:00] [Async Chat Thread - #5/INFO]: <Wisk> hide n seek[m
+
+[13:14:06] [Async Chat Thread - #5/INFO]: <Wisk> hint im at THE base[m
+
+[13:14:22] [Async Chat Thread - #5/INFO]: <Wisk> if u punch me u win[m
+
+[13:14:43] [Async Chat Thread - #5/INFO]: <Wisk> like inside[m
+
+[13:14:51] [Async Chat Thread - #5/INFO]: <Wisk> inside the base[m
+
+[13:15:23] [Async Chat Thread - #5/INFO]: <Wisk> jose bro im not that hard to find[m
+
+[13:16:03] [Async Chat Thread - #5/INFO]: <Wisk> OK FINAL HINT NEAR BEDROOM[m
+
+[13:17:23] [Async Chat Thread - #6/INFO]: <Wisk> OK FINAL HINT NEAR BEDROOM[m
+
+[13:17:25] [Async Chat Thread - #6/INFO]: <Wisk> OK FINAL HINT NEAR BEDROOM[m
+
+[13:17:29] [Async Chat Thread - #6/INFO]: <Wisk> bro jose wya[m
+
+[13:18:05] [Async Chat Thread - #6/INFO]: <ZaZa> im come[m
+
+[13:18:19] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[13:18:19] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[13:18:28] [Async Chat Thread - #6/INFO]: <ZaZa> lol[m
+
+[13:18:31] [Server thread/INFO]: Wisk issued server command: /gamode s
+[13:18:39] [Async Chat Thread - #6/INFO]: <ZaZa> nigga telported so fast[m
+
+[13:18:39] [Server thread/INFO]: Wisk issued server command: /gamemode spectator
+[13:18:39] [Server thread/INFO]: [Wisk: Set own game mode to Spectator Mode]
+[13:18:48] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:18:48] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:18:54] [Server thread/INFO]: Wisk issued server command: /gamemode spectator
+[13:18:54] [Server thread/INFO]: [Wisk: Set own game mode to Spectator Mode]
+[13:18:57] [Server thread/INFO]: ZaZa tried to swim in lava
+[13:19:04] [Async Chat Thread - #6/INFO]: <ZaZa> my stuffffffffff[m
+
+[13:19:06] [Async Chat Thread - #6/INFO]: <ZaZa> my food[m
+
+[13:19:28] [Async Chat Thread - #6/INFO]: <Wisk> its in the chest what did u have[m
+
+[13:19:33] [Async Chat Thread - #6/INFO]: <Wisk> waht food and stuff[m
+
+[13:19:34] [Async Chat Thread - #6/INFO]: <ZaZa> iron[m
+
+[13:19:37] [Async Chat Thread - #6/INFO]: <ZaZa> sword[m
+
+[13:19:39] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[13:19:39] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[13:19:42] [Async Chat Thread - #6/INFO]: <ZaZa> and diamond helmet[m
+
+[13:20:43] [Async Chat Thread - #7/INFO]: <Wisk> here ur helmet[m
+
+[13:20:49] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[13:20:49] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[13:20:58] [Async Chat Thread - #7/INFO]: <ZaZa> bro[m
+
+[13:21:07] [Async Chat Thread - #7/INFO]: <ZaZa> still tough[m
+
+[13:21:18] [Async Chat Thread - #7/INFO]: <Wisk> bro did NOT have a diamond helmet[m
+
+[13:21:24] [Async Chat Thread - #7/INFO]: <ZaZa> ALR LISTEN UP FARM ANIMALS[m
+
+[13:21:36] [Async Chat Thread - #7/INFO]: <ZaZa> TODAY IS EXCUTION DAY[m
+
+[13:21:39] [Async Chat Thread - #7/INFO]: <Wisk> here all ur other stuff[m
+
+[13:21:42] [Async Chat Thread - #7/INFO]: <ZaZa> sike[m
+
+[13:22:01] [Async Chat Thread - #7/INFO]: <Wisk> animal farm ahh story\[m
+
+[13:22:13] [Async Chat Thread - #7/INFO]: <Wisk> theyre going to revolt one day[m
+
+[13:22:23] [Async Chat Thread - #7/INFO]: <ZaZa> not over my dead bosy[m
+
+[13:22:34] [Async Chat Thread - #7/INFO]: <ZaZa> brb[m
+
+[13:22:50] [Server thread/INFO]: Wisk issued server command: /gamode s
+[13:22:58] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[13:22:58] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[13:24:04] [Async Chat Thread - #8/INFO]: <ZaZa> yo[m
+
+[13:24:52] [Async Chat Thread - #8/INFO]: <ZaZa> take a bath stinker[m
+
+[13:27:59] [Async Chat Thread - #9/INFO]: <Wisk> wow[m
+
+[13:28:02] [Async Chat Thread - #9/INFO]: <Wisk> f u[m
+
+[13:28:43] [Server thread/INFO]: Could not de-op @a
+[13:28:50] [Async Chat Thread - #9/INFO]: <ZaZa> hi stinker[m
+
+[13:28:53] [Server thread/INFO]: Could not de-op a@
+[13:29:01] [Async Chat Thread - #9/INFO]: <Wisk> wat[m
+
+[13:29:15] [Server thread/INFO]: ZaZa fell from a high place
+[13:29:19] [Server thread/INFO]: ZaZa issued server command: /back
+[13:29:19] [Async Chat Thread - #9/INFO]: <Wisk> nice 1[m
+
+[13:29:50] [Server thread/INFO]: Wisk was slain by ZaZa
+[13:29:55] [Server thread/INFO]: ZaZa lost connection: Disconnected
+[13:29:55] [Server thread/INFO]: ZaZa left the game.
+[13:31:56] [Server thread/INFO]: Wisk issued server command: /back
+[13:33:17] [Server thread/INFO]: Wisk lost connection: Internal Exception: java.net.SocketException: Connection reset
+[13:33:17] [Server thread/INFO]: Wisk left the game.
+[13:50:06] [Thread-14/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[13:50:06] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:48022] logged in with entity id 19947 at ([world]323.30000001192093, 72.0, 265.6849912576391)
+[13:51:50] [Server thread/INFO]: ZaZa lost connection: Disconnected
+[13:51:50] [Server thread/INFO]: ZaZa left the game.
+[13:56:42] [Thread-15/INFO]: UUID of player Wisk is c90806aa-6c62-38f1-b44c-a7f6bf4c78af
+[13:56:42] [Server thread/INFO]: Wisk[/[0:0:0:0:0:0:0:1]:48836] logged in with entity id 20145 at ([world]319.30000001192093, 68.36075, 301.6896229883031)
+[13:56:57] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[13:56:57] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[14:11:35] [Server thread/INFO]: Wisk lost connection: Disconnected
+[14:11:35] [Server thread/INFO]: Wisk left the game.
+[14:11:40] [Thread-17/INFO]: UUID of player Wisk is c90806aa-6c62-38f1-b44c-a7f6bf4c78af
+[14:11:40] [Server thread/INFO]: Wisk[/[0:0:0:0:0:0:0:1]:40896] logged in with entity id 23314 at ([world]261.48134183129514, 70.0, 251.52086338612156)
+[14:11:56] [Server thread/INFO]: Wisk lost connection: Disconnected
+[14:11:56] [Server thread/INFO]: Wisk left the game.
+[14:12:01] [Thread-18/INFO]: UUID of player Wisk is c90806aa-6c62-38f1-b44c-a7f6bf4c78af
+[14:12:01] [Server thread/INFO]: Wisk[/[0:0:0:0:0:0:0:1]:36752] logged in with entity id 23316 at ([world]268.69999998807907, 69.0, 251.69999998807907)
+[14:18:11] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[14:18:11] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[14:33:59] [Server thread/INFO]: Wisk issued server command: /clear weather
+[14:33:59] [Server thread/INFO]: [Wisk: That player cannot be found]
+[14:34:03] [Server thread/INFO]: Wisk issued server command: /weather clear
+[14:34:03] [Server thread/INFO]: [Wisk: Changing to clear weather]
+[14:35:09] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[14:35:09] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[14:37:54] [Thread-20/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[14:37:55] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:54258] logged in with entity id 27070 at ([world]327.69999998807907, 72.0, 260.8774393152488)
+[14:38:00] [Async Chat Thread - #10/INFO]: <Wisk> nig[m
+
+[14:38:05] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[14:38:05] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[14:38:09] [Async Chat Thread - #10/INFO]: <ZaZa> yo[m
+
+[14:38:11] [Server thread/INFO]: Wisk issued server command: /tp Wlsk
+[14:38:11] [Server thread/INFO]: [Wisk: The entity UUID provided is in an invalid format]
+[14:38:18] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:38:18] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:38:21] [Async Chat Thread - #10/INFO]: <ZaZa> culo face[m
+
+[14:38:23] [Server thread/INFO]: Wisk fell from a high place
+[14:38:26] [Async Chat Thread - #10/INFO]: <ZaZa> lol[m
+
+[14:38:32] [Server thread/INFO]: Wisk issued server command: /back
+[14:38:35] [Async Chat Thread - #10/INFO]: <Wisk> rlly[m
+
+[14:38:57] [Async Chat Thread - #10/INFO]: <ZaZa> CREEPER[m
+
+[14:39:03] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:39:08] [Async Chat Thread - #10/INFO]: <Wisk> ur not funny[m
+
+[14:39:11] [Server thread/INFO]: Wisk issued server command: /back
+[14:39:16] [Async Chat Thread - #10/INFO]: <ZaZa> there was creeper[m
+
+[14:39:22] [Async Chat Thread - #10/INFO]: <ZaZa> CREEPER[m
+
+[14:39:24] [Async Chat Thread - #10/INFO]: <Wisk> ok imma go mooshroom hunting[m
+
+[14:39:45] [Server thread/INFO]: Wisk issued server command: /kill ZaZA
+[14:39:45] [Server thread/INFO]: ZaZa fell out of the world
+[14:39:45] [Server thread/INFO]: [Wisk: Killed ZaZa]
+[14:39:52] [Async Chat Thread - #10/INFO]: <ZaZa> yo hacker?[m
+
+[14:39:53] [Async Chat Thread - #10/INFO]: <Wisk> mm i got moo shroom[m
+
+[14:39:54] [Server thread/INFO]: ZaZa issued server command: /back
+[14:40:02] [Async Chat Thread - #10/INFO]: <Wisk> that wasnt me[m
+
+[14:40:12] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:40:16] [Server thread/INFO]: Wisk issued server command: /back
+[14:41:02] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:41:07] [Server thread/INFO]: Wisk issued server command: /back
+[14:41:11] [Async Chat Thread - #11/INFO]: <Wisk> u think ut the king[m
+
+[14:41:11] [Async Chat Thread - #11/INFO]: <ZaZa> bro got juked[m
+
+[14:41:19] [Async Chat Thread - #11/INFO]: <ZaZa> im the king for now on[m
+
+[14:41:25] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:41:31] [Server thread/INFO]: Wisk issued server command: /back
+[14:42:03] [Async Chat Thread - #11/INFO]: <Wisk> bro trapped me[m
+
+[14:42:39] [Server thread/INFO]: ZaZa lost connection: Disconnected
+[14:42:39] [Server thread/INFO]: ZaZa left the game.
+[14:42:51] [Server thread/INFO]: Wisk fell from a high place
+[14:42:56] [Server thread/INFO]: Wisk issued server command: /back
+[14:43:04] [Thread-21/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[14:43:05] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:53332] logged in with entity id 29577 at ([world]316.89862498949344, 63.0, 353.3582971579153)
+[14:43:16] [Server thread/INFO]: ZaZa was slain by Wisk
+[14:43:19] [Server thread/INFO]: ZaZa issued server command: /back
+[14:43:21] [Async Chat Thread - #12/INFO]: <Wisk> IM THE KINGGGG[m
+
+[14:43:26] [Async Chat Thread - #12/INFO]: <Wisk> bro tried running[m
+
+[14:43:49] [Async Chat Thread - #12/INFO]: <Wisk> stop[m
+
+[14:43:55] [Server thread/INFO]: ZaZa was slain by Wisk
+[14:43:58] [Server thread/INFO]: ZaZa issued server command: /back
+[14:44:18] [Async Chat Thread - #12/INFO]: <Wisk> back off[m
+
+[14:44:32] [Server thread/INFO]: ZaZa was slain by Wisk
+[14:44:36] [Server thread/INFO]: ZaZa issued server command: /back
+[14:44:45] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:44:48] [Async Chat Thread - #12/INFO]: <Wisk> niogger[m
+
+[14:44:50] [Server thread/INFO]: Wisk issued server command: /back
+[14:45:00] [Async Chat Thread - #12/INFO]: <Wisk> ur a nugget[m
+
+[14:45:08] [Async Chat Thread - #12/INFO]: <ZaZa> i have the cwon on[m
+
+[14:45:12] [Async Chat Thread - #12/INFO]: <ZaZa> crown[m
+
+[14:45:18] [Async Chat Thread - #12/INFO]: <ZaZa> that means im the king[m
+
+[14:45:26] [Async Chat Thread - #12/INFO]: <ZaZa> bow down[m
+
+[14:45:42] [Async Chat Thread - #12/INFO]: <Wisk> ok[m
+
+[14:46:12] [Server thread/INFO]: Wisk issued server command: /gamemode spectator
+[14:46:12] [Server thread/INFO]: [Wisk: Set own game mode to Spectator Mode]
+[14:46:18] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[14:46:18] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[14:46:30] [Async Chat Thread - #12/INFO]: <Wisk> goofy[m
+
+[14:46:42] [Async Chat Thread - #12/INFO]: <Wisk> im so scared[m
+
+[14:47:09] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:47:13] [Async Chat Thread - #12/INFO]: <ZaZa> bro fell[m
+
+[14:47:14] [Server thread/INFO]: Wisk issued server command: /back
+[14:47:23] [Async Chat Thread - #12/INFO]: <Wisk> iggeras[m
+
+[14:47:32] [Async Chat Thread - #12/INFO]: <Wisk> brb[m
+
+[14:48:54] [Async Chat Thread - #13/INFO]: <Wisk> stop now[m
+
+[14:49:09] [Server thread/INFO]: Wisk issued server command: /gamode c
+[14:49:15] [Server thread/INFO]: Wisk issued server command: /gamemode c
+[14:49:15] [Server thread/INFO]: [Wisk: Set own game mode to Creative Mode]
+[14:49:37] [Server thread/INFO]: Wisk issued server command: /gamemode s
+[14:49:37] [Server thread/INFO]: [Wisk: Set own game mode to Survival Mode]
+[14:49:40] [Async Chat Thread - #13/INFO]: <Wisk> f off[m
+
+[14:49:47] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:49:47] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:49:49] [Async Chat Thread - #13/INFO]: <ZaZa> do something about it[m
+
+[14:50:15] [Async Chat Thread - #13/INFO]: <Wisk> i will kill u[m
+
+[14:50:21] [Async Chat Thread - #13/INFO]: <Wisk> wya[m
+
+[14:50:28] [Async Chat Thread - #13/INFO]: <ZaZa> find me biech[m
+
+[14:50:34] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:50:34] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:50:36] [Async Chat Thread - #13/INFO]: <ZaZa> r[m
+
+[14:50:51] [Async Chat Thread - #13/INFO]: <ZaZa> legend never die till they dead[m
+
+[14:50:52] [Server thread/INFO]: Wisk went up in flames
+[14:50:58] [Async Chat Thread - #13/INFO]: <ZaZa> YOOOOOOOOOO[m
+
+[14:51:06] [Async Chat Thread - #13/INFO]: <Wisk> did I just get struck by lighnitng[m
+
+[14:51:10] [Async Chat Thread - #13/INFO]: <Wisk> did u see that[m
+
+[14:51:14] [Server thread/INFO]: Wisk issued server command: /back
+[14:51:15] [Async Chat Thread - #13/INFO]: <ZaZa> yes nigga omh[m
+
+[14:51:18] [Async Chat Thread - #13/INFO]: <ZaZa> omg[m
+
+[14:51:27] [Async Chat Thread - #13/INFO]: <ZaZa> BRO IT WAS CRAZY[m
+
+[14:51:33] [Async Chat Thread - #13/INFO]: <Wisk> bro cant catch me[m
+
+[14:51:33] [Async Chat Thread - #13/INFO]: <ZaZa> YOU GOT STRUCK[m
+
+[14:51:54] [Async Chat Thread - #13/INFO]: <ZaZa> MINECRAFT HAS TOLD YOU IM KING BY STRIKING YOU[m
+
+[14:52:02] [Async Chat Thread - #13/INFO]: <Wisk> kill me them[m
+
+[14:52:10] [Async Chat Thread - #13/INFO]: <Wisk> noob[m
+
+[14:52:15] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:52:15] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:52:20] [Server thread/INFO]: Wisk fell from a high place
+[14:52:26] [Async Chat Thread - #13/INFO]: <ZaZa> noob[m
+
+[14:52:28] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:52:28] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:53:11] [Async Chat Thread - #13/INFO]: <Wisk> bro ur not tuff[m
+
+[14:53:19] [Async Chat Thread - #13/INFO]: <Wisk> thunder and rainstorm ahh[m
+
+[14:53:28] [Async Chat Thread - #13/INFO]: <Wisk> bro is not the zues[m
+
+[14:53:33] [Async Chat Thread - #13/INFO]: <ZaZa> legends never die till they dead[m
+
+[14:53:43] [Server thread/INFO]: Wisk issued server command: /tp ZaZa Wisk
+[14:53:43] [Server thread/INFO]: [Wisk: Teleported ZaZa to Wisk]
+[14:53:44] [Server thread/INFO]: ZaZa was slain by Wisk
+[14:53:50] [Async Chat Thread - #13/INFO]: <Wisk> lol[m
+
+[14:54:00] [Server thread/INFO]: ZaZa issued server command: /lighting strike Wisk
+[14:54:03] [Server thread/INFO]: ZaZa issued server command: /back
+[14:54:27] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:55:12] [Server thread/INFO]: Wisk issued server command: /ZaZa
+[14:55:17] [Server thread/INFO]: Wisk issued server command: /tp Zaza
+[14:55:17] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:55:29] [Async Chat Thread - #14/INFO]: <Wisk> whre did u go[m
+
+[14:55:32] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:55:32] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:55:42] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:55:47] [Async Chat Thread - #14/INFO]: <ZaZa> noob[m
+
+[14:55:48] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:55:48] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:55:49] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:56:40] [Async Chat Thread - #14/INFO]: <Wisk> whre did u go[m
+
+[14:56:43] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:56:43] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:56:45] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:56:48] [Async Chat Thread - #14/INFO]: <ZaZa> idk[m
+
+[14:56:55] [Async Chat Thread - #14/INFO]: <Wisk> who tf do u onetap me[m
+
+[14:56:59] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:56:59] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:57:02] [Server thread/INFO]: ZaZa fell from a high place
+[14:57:07] [Server thread/INFO]: ZaZa issued server command: /back
+[14:57:27] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:57:37] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:57:37] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:57:39] [Server thread/INFO]: Wisk was slain by ZaZa
+[14:57:52] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[14:57:52] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[14:58:00] [Server thread/INFO]: Wisk issued server command: /kill ZaZa
+[14:58:00] [Server thread/INFO]: ZaZa fell out of the world
+[14:58:00] [Server thread/INFO]: [Wisk: Killed ZaZa]
+[14:58:05] [Server thread/INFO]: ZaZa issued server command: /back
+[14:58:28] [Server thread/INFO]: ZaZa tried to swim in lava
+[14:58:28] [Async Chat Thread - #15/INFO]: <Wisk> lol[m
+
+[14:58:44] [Server thread/INFO]: Wisk issued server command: /tp ZaZa Wisk
+[14:58:44] [Server thread/INFO]: [Wisk: Teleported ZaZa to Wisk]
+[14:58:59] [Async Chat Thread - #15/INFO]: <Wisk> i have ur loot[m
+
+[14:59:05] [Async Chat Thread - #15/INFO]: <Wisk> im aM THE KINGGGGGGGG[m
+
+[14:59:47] [Async Chat Thread - #15/INFO]: <Wisk> bro egging me[m
+
+[15:00:18] [Async Chat Thread - #15/INFO]: <Wisk> stop egging me[m
+
+[15:00:51] [Async Chat Thread - #15/INFO]: <Wisk> stop now[m
+
+[15:01:13] [Async Chat Thread - #15/INFO]: <Wisk> hold brb gotta do work[m
+
+[15:01:49] [Server thread/INFO]: Wisk tried to swim in lava to escape ZaZa
+[15:01:56] [Async Chat Thread - #15/INFO]: <Wisk> ut fault[m
+
+[15:01:59] [Async Chat Thread - #15/INFO]: <Wisk> ur[m
+
+[15:02:04] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[15:02:04] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[15:02:16] [Server thread/INFO]: Wisk was slain by ZaZa
+[15:02:16] [Server thread/INFO]: ZaZa was slain by Wisk
+[15:02:59] [Async Chat Thread - #16/INFO]: <Wisk> sleep[m
+
+[15:03:14] [Server thread/INFO]: Wisk was slain by ZaZa
+[15:03:17] [Async Chat Thread - #16/INFO]: <Wisk> nigsafd[m
+
+[15:03:21] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[15:03:21] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[15:03:25] [Async Chat Thread - #16/INFO]: <ZaZa> nigga got stuck[m
+
+[15:03:46] [Server thread/INFO]: Wisk was slain by ZaZa
+[15:03:55] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[15:03:55] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[15:04:43] [Server thread/INFO]: Wisk tried to swim in lava to escape ZaZa
+[15:04:47] [Async Chat Thread - #17/INFO]: <ZaZa> LMAO[m
+
+[15:04:49] [Async Chat Thread - #17/INFO]: <Wisk> fuk uuuuu[m
+
+[15:04:54] [Server thread/INFO]: Wisk issued server command: /tp ZaZa
+[15:04:54] [Server thread/INFO]: [Wisk: Teleported Wisk to ZaZa]
+[15:05:02] [Server thread/INFO]: ZaZa was slain by Wisk
+[15:05:05] [Async Chat Thread - #17/INFO]: <Wisk> lol[m
+
+[15:05:09] [Async Chat Thread - #17/INFO]: <Wisk> do / back[m
+
+[15:05:20] [Server thread/INFO]: Wisk tried to swim in lava
+[15:05:21] [Server thread/INFO]: ZaZa issued server command: /back
+[15:05:27] [Async Chat Thread - #17/INFO]: <Wisk> oops[m
+
+[15:05:29] [Async Chat Thread - #17/INFO]: <Wisk> stop[m
+
+[15:05:35] [Async Chat Thread - #17/INFO]: <Wisk> what did i do to u[m
+
+[15:06:26] [Async Chat Thread - #17/INFO]: <Wisk> phew[m
+
+[15:06:31] [Async Chat Thread - #17/INFO]: <Wisk> that was close[m
+
+[15:06:43] [Async Chat Thread - #17/INFO]: <ZaZa> im pro your noob[m
+
+[15:06:55] [Async Chat Thread - #17/INFO]: <Wisk> i was at 1 heart and escaped[m
+
+[15:07:08] [Async Chat Thread - #17/INFO]: <Wisk> bro got juked[m
+
+[15:07:09] [Server thread/INFO]: Wisk was slain by ZaZa
+[15:07:14] [Async Chat Thread - #17/INFO]: <ZaZa> LMAo[m
+
+[15:07:18] [Async Chat Thread - #17/INFO]: <Wisk> gtg[m
+
+[15:07:20] [Async Chat Thread - #17/INFO]: <ZaZa> bro did not get juked[m
+
+[15:07:21] [Server thread/INFO]: Wisk lost connection: Disconnected
+[15:07:21] [Server thread/INFO]: Wisk left the game.
+[15:07:24] [Server thread/INFO]: ZaZa lost connection: Disconnected
+[15:07:24] [Server thread/INFO]: ZaZa left the game.
+[15:18:39] [Thread-23/INFO]: UUID of player Wlsk is 31c96050-3ca4-30b0-b3c3-2c6a78e41297
+[15:18:39] [Server thread/INFO]: Wlsk[/[0:0:0:0:0:0:0:1]:33532] logged in with entity id 38538 at ([world]326.80851133713105, 66.0625, 262.85239775211846)
+[15:18:49] [Server thread/INFO]: Wlsk lost connection: Disconnected
+[15:18:49] [Server thread/INFO]: Wlsk left the game.
+[15:18:56] [Thread-24/INFO]: Disconnecting com.mojang.authlib.GameProfile@2c660567[id=f227211d-dece-3840-8d35-831096bdf612,name=zaza,properties={textures=[com.mojang.authlib.properties.Property@6a59a954], isEaglerPlayer=[com.mojang.authlib.properties.Property@72543598]},legacy=false] (/[0:0:0:0:0:0:0:1]:43674): [LoginSecurity] This account is registered under the name ZaZa, please log in as such.
+[15:18:56] [Server thread/INFO]: com.mojang.authlib.GameProfile@2c660567[id=f227211d-dece-3840-8d35-831096bdf612,name=zaza,properties={textures=[com.mojang.authlib.properties.Property@6a59a954], isEaglerPlayer=[com.mojang.authlib.properties.Property@72543598]},legacy=false] (/[0:0:0:0:0:0:0:1]:43674) lost connection: [LoginSecurity] This account is registered under the name ZaZa, please log in as such.
+[15:19:06] [Thread-25/INFO]: UUID of player edward is d4fc61b4-2b09-30ee-98a9-614264e07a2c
+[15:19:06] [Server thread/INFO]: edward[/[0:0:0:0:0:0:0:1]:38550] logged in with entity id 38648 at ([world]219.5, 73.0, 246.5)
+[15:19:13] [Server thread/INFO]: edward lost connection: Disconnected
+[15:19:13] [Server thread/INFO]: edward left the game.
+[15:19:21] [Thread-26/INFO]: UUID of player w1sk is 3df6cde5-64d6-3d4c-942c-18e66aa9e106
+[15:19:22] [Server thread/INFO]: w1sk[/[0:0:0:0:0:0:0:1]:52532] logged in with entity id 38664 at ([world]212.5, 73.0, 243.5)
+[15:19:27] [Server thread/INFO]: w1sk lost connection: Disconnected
+[15:19:27] [Server thread/INFO]: w1sk left the game.
+[15:19:34] [Thread-27/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[15:19:35] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:38336] logged in with entity id 38714 at ([world]319.64472323800305, 67.0, 284.53059664890753)
+[15:19:46] [Server thread/INFO]: ZaZa lost connection: Disconnected
+[15:19:46] [Server thread/INFO]: ZaZa left the game.
+[15:19:53] [Thread-28/INFO]: UUID of player Wlsk is 31c96050-3ca4-30b0-b3c3-2c6a78e41297
+[15:19:53] [Server thread/INFO]: Wlsk[/[0:0:0:0:0:0:0:1]:45894] logged in with entity id 38802 at ([world]326.0545273317374, 66.0625, 262.8728885483339)
+[15:25:42] [Server thread/INFO]: Wlsk lost connection: Disconnected
+[15:25:42] [Server thread/INFO]: Wlsk left the game.
+[15:26:26] [Thread-29/INFO]: UUID of player Wlsk is 31c96050-3ca4-30b0-b3c3-2c6a78e41297
+[15:26:26] [Server thread/INFO]: Wlsk[/[0:0:0:0:0:0:0:1]:55290] logged in with entity id 40522 at ([world]325.4985534725531, 68.0, 290.3457900121514)
+[15:27:37] [Async Chat Thread - #18/INFO]: <Wlsk> hey larry[m
+
+[15:27:56] [Async Chat Thread - #18/INFO]: <Wlsk> if u read this message through console[m
+
+[15:28:40] [Thread-30/INFO]: UUID of player ZaZa is c6df158e-eb4c-3dbf-94f9-989334821b7c
+[15:28:40] [Server thread/INFO]: ZaZa[/[0:0:0:0:0:0:0:1]:53222] logged in with entity id 40857 at ([world]319.9769561516334, 67.0, 284.2572464622607)
+[15:28:48] [Async Chat Thread - #18/INFO]: <Wlsk> Hey :<[m
+
+[15:28:50] [Async Chat Thread - #18/INFO]: <ZaZa> yo[m
+
+[15:30:26] [Async Chat Thread - #19/INFO]: <ZaZa> hi[m
+
+[15:30:30] [Async Chat Thread - #19/INFO]: <Wlsk> hey[m
+
+[15:30:36] [Async Chat Thread - #19/INFO]: <ZaZa> behind you[m
+
+[15:32:05] [Async Chat Thread - #20/INFO]: <ZaZa> why are you doing this[m
+
+[15:32:12] [Async Chat Thread - #20/INFO]: <Wlsk> it looks cool[m
+
